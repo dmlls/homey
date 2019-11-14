@@ -1,4 +1,4 @@
-# Homie (집돌이)
+# Homey (집돌이)
 Simple home automation system. Control your home with your smartphone.
 
 **Authors:**

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".History"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity ="center"
+        android:fillViewport="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_history"
+                android:textSize="30dp"
+                android:text="Arduino's History"
+                android:layout_centerHorizontal="true"
+                android:textColor="#b0c4de"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/name_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#52BAFF"
+                android:layout_below="@id/text_menu"
+                android:text="describe"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+
+                />
+            <ImageView
+
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:src="@drawable/arduino"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:background="#a9a9a9"
+                        android:id="@+id/textview"
+                        android:textColor="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="물리적인 세계를 감지하고 제어할 수 있는 인터랙티브 객체들과 디지털 장치를 만들기 위한 도구로, 간단한 마이크로컨트롤러(Microcontroller) 보드를 기반으로 한 오픈 소스 컴퓨팅 플랫폼과 소프트웨어 개발 환경을 말한다.
+아두이노는 다양한 스위치나 센서로부터 입력 값을 받아들여 LED나 모터와 같은 전자 장치들로 출력을 제어함으로써 환경과 상호작용이 가능한 물건을 만들어 낼 수 있다. 예를 들어 단순한 로봇, 온습도계, 동작 감지기, 음악 및 사운드 장치, 스마트 홈 구현, 유아 장난감 및 로봇 교육 프로그램 등의 다양한 제품들이 아두이노를 기반으로 개발 가능하다. 또한 아두이노는 회로가 오픈소스로 공개되어 있으므로 누구나 직접 보드를 만들고 수정할 수 있다.
+
+마이크로컨트롤러란 마이크로프로세서와 입출력 모듈을 하나의 칩으로 만들어 특정 기능을 수행하는 작은 컴퓨터를 말한다. 아두이노는 이러한 마이크로컨트롤러 보드와 관련된 개발 도구 및 환경을 모두 포함한다. 아두이노는 처음 아트멜(Atmel AVR) 마이크로컨트롤러를 기반으로 만들어졌지만, 용도에 따라 다양한 보드가 있으며 개발 툴과 여러 기능에 대한 라이브러리가 제공되고 있다. 아두이노와 유사하게 피지컬 컴퓨팅(Physical Computing)을 가능하게 하는 마이크로컨트롤러와 플랫폼은 다양하지만 아두이노는 마이크로컨트롤러를 기반으로 하는 작업을 단순화하였으며 다음과 같은 다양한 강점을 가진다.
+
+1. 저비용 : 아두이노 보드는 다른 마이크로컨트롤러 플랫폼에 비해 저렴하다.
+2. 크로스 플랫폼 : 아두이노 소프트웨어는 윈도우즈, 맥OSX, 리눅스 운영체제 모두에서 작동한다.
+3. 간단하고 명확한 프로그래밍 환경 : 아두이노 프로그래밍 환경은 초보자들이 사용하기 쉬울 뿐 아니라 실력자들이 여러가지 다양한 시도를 하기 위한 유연성을 제공한다. 소프트웨어 개발을 위한 통합개발환경(IDE)가 제공되며 컴파일 된 펌웨어(특정 하드웨어 상에서 동작하는 소프트웨어)를 USB를 통해 손쉽게 업로드 할 수 있다.
+4. 오픈 소스 : 아두이노 하드웨어 및 소프트웨어는 오픈 소스 툴이기 때문에 고급 프로그래머들에 의해 작성된 확장 소프트웨어 라이브러리들을 구할 수 있으며, 회로 설계자들이 손쉽게 자신만의 모듈을 만들고 개선할 수 있다.
+
+최초의 아두이노는 2005년 이탈리아 이브레아(Ivrea)에서 시작되었다. 마시모 반지(Massimo Banzi) 교수와 데이비드 쿠아르티에예스(David Cuartielles) 교수는 인터랙션 디자인 전문학교(IDII)에서 공부하는 하드웨어 미숙련자 및 비전공 학도들을 위해 기초적인 지식만으로도 쉽게 프로그램 작성이 가능하고, 또한 저렴하게 구입 가능한 마이크로컨트롤러 보드를 개발하고자 하였다. 아두이노의 하드웨어와 소프트웨어가 오픈소스로 개방되면서 수많은 개인과 기업들이 아두이노를 기반으로 다양한 모양과 성능의 아두이노 및 아두이노 호환 보드를 개발하였으며, 2013년에는 70만 개의 아두이노 공식 보드를 사용할 수 있게 되었다.
+[네이버 지식백과] 아두이노 [Arduino] (두산백과)
+
+"
+                        />
+                </ScrollView>
+
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

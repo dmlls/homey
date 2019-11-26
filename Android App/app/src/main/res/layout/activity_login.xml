@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/bg_login"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="L O G I N"
+        android:textSize="60dp"
+        android:textColor="#FBEFEF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@id/passwordInput"
+    android:layout_marginTop="40dp"
+    android:layout_centerHorizontal="true"
+    >
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_toStartOf="@+id/signupButton"
+        android:background="#424242"
+        android:text="L o g i n"
+        android:textColor="#FBEFEF"
+        android:textSize="20dp"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_toStartOf="@+id/signupButton"
+        android:background="#424242"
+        android:text="New Account"
+        android:textColor="#FBEFEF"
+        android:layout_marginLeft="4dp"
+        android:textAllCaps="false" />
+</LinearLayout>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/emailInput"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:layout_marginTop="250dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/passwordInput"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:layout_below="@+id/emailInput" />
+
+
+</RelativeLayout>

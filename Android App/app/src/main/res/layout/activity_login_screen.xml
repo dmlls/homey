@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreen"
+    android:background="@drawable/bg_login"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Account"
+        android:textSize="40dp"
+        android:textColor="#FBEFEF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        />
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/emailInput"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:layout_marginTop="250dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/passwordInput"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:layout_below="@+id/emailInput" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/passwordInput"
+    android:layout_marginTop="50dp"
+    >
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:textColor="#FBEFEF"
+        android:layout_toStartOf="@+id/signupButton"
+        android:background="#424242"
+        android:text="Already have an account?"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="4dp"
+        android:background="#424242"
+        android:textColor="#FBEFEF"
+        android:text="Sign up"
+        android:textSize="20dp"
+        android:textAllCaps="false" />
+</LinearLayout>
+
+</RelativeLayout>

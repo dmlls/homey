@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Homey</string>
+    <string name="lights_label">Lights</string>
+    <string name="fan_label">Fan</string>
+    <string name="temperature_default">Temperature: -</string>
+    <string name="humidity_default">Humidity: -</string>
+    <string name="temperature_display">Temperature: %1$sºC</string>
+    <string name="humidity_display">Humidity: %1$s%%</string>
+    <string name="auto_fan">Fan activated automatically.</string>
+    <string name="auto_lights">Lights activated automatically.</string>
+    <string name="settings">Settings</string>
+
+    <string name="dankook_university">Dankook University</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="auto_activate_header">Auto-activation</string>
+
+    <!-- Auto-activate Preferences -->
+    <string name="auto_activate_title">Auto-activate</string>
+    <string name="auto_activate_lights">Activate lights automatically</string>
+    <string name="lights_summary_on">The lights will be turned on and off automatically.
+    </string>
+    <string name="lights_summary_off">The lights will only be activated manually.</string>
+    <string name="auto_activate_fan">Activate fan automatically</string>
+    <string name="fan_summary_on">The fan will be turned on and off automatically.
+    </string>
+    <string name="fan_summary_off">The fan will only be activated manually.</string>
+    <string name="info_changes">Changes will be applied when pressing back.</string>
+</resources>

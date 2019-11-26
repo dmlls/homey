@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroduceTeam"
+    android:background="@drawable/bg_login"
+    >
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/intro_name"
+        android:textSize="30dp"
+        android:text="Introduce our members"
+        android:layout_centerHorizontal="true"
+        android:textColor="#b0c4de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/sub_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#52BAFF"
+        android:layout_below="@id/intro_name"
+        android:text="Group C"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        />
+    <ScrollView
+        android:layout_below="@id/sub_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnOrderPreserved="false"
+            android:columnCount="1"
+            android:rowCount="5"
+            android:alignmentMode="alignMargins"
+            android:paddingBottom="6dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#00ff0000"
+                android:layout_marginTop="20dp"
+                android:id="@+id/list1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/member2"
+                            />
+                        <TextView
+                            android:textColor="#ffffff"
+                            android:id="@+id/member1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="4dp"
+                            android:paddingStart="4dp"
+                            android:text="Hi, I am Young Hwan Jeong attending the 3rd grade of mobile system engineering. I am Korean and my hobby is watching movies, playing games, and collecting watches. I'm interested in deep learning and algorithms."
+                            android:background="#00ff0000"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#00ff0000"
+                android:layout_marginTop="20dp"
+                android:id="@+id/list2"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/member1"
+                            />
+                        <TextView
+                            android:textColor="#ffffff"
+                            android:id="@+id/member2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="4dp"
+                            android:paddingStart="4dp"
+                            android:text="My name is Diego and I'm a 21 year-old exchange student from Burgos, Spain. I'm currently majoring Computer Engineering, being this my fourth and last year. I will be here, at Dankook University, for two semesters. Apart from technology, other things that interest me are music, graphic design and languages."
+                            android:background="#00ff0000"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#00ff0000"
+                android:layout_marginTop="20dp"
+                android:id="@+id/list3"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/member3"
+                            />
+                        <TextView
+                            android:textColor="#ffffff"
+                            android:id="@+id/member3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="4dp"
+                            android:paddingStart="4dp"
+                            android:text="Hi friends
+I'm Eric and a senior of mobile sys eng.
+I'm very interested in making new friends and learning foreign cultures~!
+so if u need any help of living in Korea or need someone to learn Korean stuffs..
+plz text me any time ^^
+Thank you :)"
+                            android:background="#00ff0000"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#00ff0000"
+                android:layout_marginTop="20dp"
+                android:id="@+id/list4"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/member4"
+                            />
+                        <TextView
+                            android:textColor="#ffffff"
+                            android:id="@+id/member4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="4dp"
+                            android:paddingStart="4dp"
+                            android:text="Hi! my name is jae wook lee. We are currently in group C.
+I'm in charge of communicating with foreign students and korean students!!
+Very looking forward to see users use our application! Thank you!"
+                            android:background="#00ff0000"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#00ff0000"
+                android:layout_marginTop="20dp"
+                android:id="@+id/list5"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/ryan"
+                            />
+                        <TextView
+                            android:textColor="#ffffff"
+                            android:id="@+id/member5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="4dp"
+                            android:paddingStart="4dp"
+                            android:text="intro 5"
+                            android:background="#00ff0000"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </ScrollView>
+</RelativeLayout>
